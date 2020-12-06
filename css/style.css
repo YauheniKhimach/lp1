@@ -47,6 +47,17 @@ body {
     margin-left: 38px;
 }
 
+.btn__menu {
+    width: 40px;
+    display: none;
+}
+
+.btn__menu div {
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #000000;
+}
+
 .menu__list a {
     font-size: 14px;
     color: #2f3f54;
@@ -407,19 +418,21 @@ body {
     /*justify-content: space-between;*/
 }
 
-.reviews-slider .slick-list{
+.reviews-slider .slick-list {
     margin: 0 -50px;
 }
-.reviews-slider .slick-track{
+
+.reviews-slider .slick-slide {
     margin: 0 50px;
+    padding-bottom: 70px;
 }
 
 .reviews-slider .slick-dots {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
+
 .reviews-slider .slick-dots button {
     font-size: 0;
     width: 10px;
@@ -430,11 +443,13 @@ body {
     background-color: #267ae9;
     outline: none;
 }
-.reviews-slider .slick-dots li{
+
+.reviews-slider .slick-dots li {
     margin: 0 8px;
 }
-.reviews-slider .slick-dots li.slick-active button{
-background-color: white;
+
+.reviews-slider .slick-dots li.slick-active button {
+    background-color: white;
     border: 2px solid #267ae9;
 }
 
@@ -458,7 +473,8 @@ background-color: white;
     justify-content: center;
     flex-direction: column;
 }
-.reviews-box__images{
+
+.reviews-box__images {
     background-color: #267ae9;
     width: 190px;
     min-height: 350px;
@@ -466,6 +482,7 @@ background-color: white;
     justify-content: center;
     display: flex;
 }
+
 .reviews-box__images img {
     border-radius: 50%;
 }
@@ -477,8 +494,9 @@ background-color: white;
 .reviews-box__author {
 
 }
-.reviews-box__author span{
-color: #267ae9;
+
+.reviews-box__author span {
+    color: #267ae9;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 
